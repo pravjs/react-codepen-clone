@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  min-height: 400px;
+}
+
+.editor-pane {
+  height: 50%;
+  box-sizing: border-box;
+  background: #38444a;
+  display: flex;
+  padding: 5px 3px;
+}
+
+.editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  background: #38444a;
+}
+
+.editor-wrapper.collapsed {
+  flex-grow: 0;
+}
+
+.editor-wrapper.collapsed .CodeMirror-scroll {
+  position: absolute;
+}
+
+.result-pane {
+  height: 50%;
+  box-sizing: border-box;
+}
+
+.editor-title {
+  background: #05476d;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  display: flex;
+  color: azure;
+  justify-content: space-between;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.editor-title h3 {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.result-pane iframe {
+  border-width: 0;
+}
+
+.react-codemirror2 {
+  flex-grow: 1;
+}
+
+.react-codemirror2 .CodeMirror {
+  height: 100%;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
